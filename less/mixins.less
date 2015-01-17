@@ -1,4 +1,84 @@
 
+.user-select(@type) when (@type = none) {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.selection(@args) {
+  ::-moz-selection: @arguments;
+  ::selection: @arguments;
+}
+
+.appearance(@args) {
+  -moz-appearance: @arguments;
+  -webkit-appearance: @arguments;
+  appearance: @arguments;
+}
+
+.placeholder-shown(@args) {
+  &:-ms-input-placeholder: @arguments;
+  &:-moz-placeholder: @arguments;
+  &:-webkit-input-placeholder: @arguments;
+  &:placeholder-shown: @arguments;
+}
+
+.read-only(@args) {
+  &:-moz-read-only,
+  &:read-only {
+    @arguments
+  }
+}
+.read-write(@args) {
+  &:-moz-read-write,
+  &:read-write {
+    @arguments
+  }
+}
+
+.dir(@ltr, @args) {
+  &:-moz-dir(@ltr),
+  &:dir(@ltr) {
+    @args;
+  }
+}
+
+.any-link(@args) {
+  &:-moz-any-link,
+  &:any-link {
+    @arguments
+  }
+}
+.scope(@args) {
+  &:-moz-scope,
+  &:scope {
+    @arguments
+  }
+}
+
+.text-overflow(@args) {
+  -o-text-overflow: @arguments;
+  text-overflow: @arguments;
+}
+.background-clip(@args) {
+  -moz-background-clip: @arguments;
+  -o-background-clip: @arguments;
+  -webkit-background-clip: @arguments;
+  background-clip: @arguments;
+}
+.background-origin(@args) {
+  -moz-background-origin: @arguments;
+  -o-background-origin: @arguments;
+  -webkit-background-origin: @arguments;
+  background-origin: @arguments;
+}
+.background-size(@args) {
+  -moz-background-size: @arguments;
+  -o-background-size: @arguments;
+  -webkit-background-size: @arguments;
+  background-size: @arguments;
+}
 .box-sizing(@args) {
   -webkit-box-sizing: @arguments;
   box-sizing: @arguments;
@@ -90,14 +170,27 @@
   mask-type: @arguments;
 }
 
-.cursor(@type) when (@type = zoom-in)  {
+.cursor(@type) when (@type = zoom-in) {
+  cursor: -moz-zoom-in;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
-.cursor(@type) when (@type = zoom-out)  {
+.cursor(@type) when (@type = zoom-out) {
+  cursor: -moz-zoom-out;
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
 }
+.cursor(@type) when (@type = grab) {
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.cursor(@type) when (@type = grabbing) {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
 .cursor(@type) {
 
 }
@@ -146,8 +239,9 @@
 }
 
 .border-image(@args) {
-  ////-moz-border-image: @arguments;
+  -moz-border-image: @arguments;
   -webkit-border-image: @arguments;
+  -o-border-image: @arguments;
   border-image: @arguments;
 }
 
@@ -291,31 +385,43 @@
 
 .transform(@args) {
   -ms-transform: @arguments;
+  -moz-transform: @arguments;
   -webkit-transform: @arguments;
+  -o-transform: @arguments;
   transform: @arguments;
 }
 .transform-origin(@args) {
   -ms-transform-origin: @arguments;
+  -moz-transform-origin: @arguments;
   -webkit-transform-origin: @arguments;
+  -o-transform-origin: @arguments;
   transform-origin: @arguments;
 }
 .transform-style(@args) {
   -ms-transform-style: @arguments;
+  -moz-transform-style: @arguments;
   -webkit-transform-style: @arguments;
+  -o-transform-style: @arguments;
   transform-style: @arguments;
 }
 .perspective(@args) {
   -ms-perspective: @arguments;
+  -moz-perspective: @arguments;
   -webkit-perspective: @arguments;
+  -o-perspective: @arguments;
   perspective: @arguments;
 }
 .perspective-origin(@args) {
   -ms-perspective-origin: @arguments;
+  -moz-perspective-origin: @arguments;
   -webkit-perspective-origin: @arguments;
+  -o-perspective-origin: @arguments;
   perspective-origin: @arguments;
 }
 .backface-visibility(@args) {
   -ms-backface-visibility: @arguments;
+  -moz-backface-visibility: @arguments;
   -webkit-backface-visibility: @arguments;
+  -o-backface-visibility: @arguments;
   backface-visibility: @arguments;
 }
