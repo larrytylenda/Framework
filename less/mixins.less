@@ -1,427 +1,1070 @@
 
-.user-select(@type) when (@type = none) {
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
+.column-count() {
+	-moz-column-count: @arguments;
+	-webkit-column-count: @arguments;
+	column-count: @arguments;
+}
+
+.column-gap() {
+	-moz-column-gap: @arguments;
+	-webkit-column-gap: @arguments;
+	column-gap: @arguments;
+}
+
+.column-rule() {
+	-moz-column-rule: @arguments;
+	-webkit-column-rule: @arguments;
+	column-rule: @arguments;
+}
+
+.column-rule-color() {
+	-moz-column-rule-color: @arguments;
+	-webkit-column-rule-color: @arguments;
+	column-rule-color: @arguments;
+}
+
+.column-rule-style() {
+	-moz-column-rule-style: @arguments;
+	-webkit-column-rule-style: @arguments;
+	column-rule-style: @arguments;
+}
+
+.column-rule-width() {
+	-moz-column-rule-width: @arguments;
+	-webkit-column-rule-width: @arguments;
+	column-rule-width: @arguments;
+}
+
+.column-span() {
+	-webkit-column-span: @arguments;
+	column-span: @arguments;
+}
+
+.column-width() {
+	-moz-column-width: @arguments;
+	-webkit-column-width: @arguments;
+	column-width: @arguments;
+}
+
+.columns() {
+	-moz-columns: @arguments;
+	-webkit-columns: @arguments;
+	columns: @arguments;
+}
+
+.flex() {
+	-ms-flex: @arguments;
+	flex: @arguments;
+}
+
+.flow-from() {
+	-ms-flow-from: @arguments;
+	-webkit-flow-from: @arguments;
+	flow-from: @arguments;
+}
+
+.perspective() {
+	-moz-perspective: @arguments;
+	-ms-perspective: @arguments;
+	-webkit-perspective: @arguments;
+	perspective: @arguments;
+}
+
+.flex-direction() {
+	-ms-flex-direction: @arguments;
+	flex-direction: @arguments;
+}
+
+.flex-flow() {
+	-ms-flex-flow: @arguments;
+	flex-flow: @arguments;
+}
+
+.object-position() {
+	-o-object-position: @arguments;
+	object-position: @arguments;
+}
+
+.flex-wrap() {
+	-ms-flex-wrap: @arguments;
+	flex-wrap: @arguments;
+}
+
+.flow-into() {
+	-ms-flow-into: @arguments;
+	-webkit-flow-into: @arguments;
+	flow-into: @arguments;
+}
+
+.font-feature-settings() {
+	-moz-font-feature-settings: @arguments;
+	-webkit-font-feature-settings: @arguments;
+	font-feature-settings: @arguments;
+}
+
+.grid-column() {
+	-ms-grid-column: @arguments;
+	grid-column: @arguments;
+}
+
+.grid-column-align() {
+	-ms-grid-column-align: @arguments;
+	grid-column-align: @arguments;
+}
+
+.grid-column-span() {
+	-ms-grid-column-span: @arguments;
+	grid-column-span: @arguments;
+}
+
+.grid-columns() {
+	-ms-grid-columns: @arguments;
+	grid-columns: @arguments;
+}
+
+.hyphens() {
+	-moz-hyphens: @arguments;
+	-ms-hyphens: @arguments;
+	-webkit-hyphens: @arguments;
+	hyphens: @arguments;
+}
+
+.grid-rows() {
+	-ms-grid-rows: @arguments;
+	grid-rows: @arguments;
+}
+
+.ime-mode() {
+	-ms-ime-mode: @arguments;
+	ime-mode: @arguments;
+}
+
+.grid-row() {
+	-ms-grid-row: @arguments;
+	grid-row: @arguments;
+}
+
+.grid-row-align() {
+	-ms-grid-row-align: @arguments;
+	grid-row-align: @arguments;
+}
+
+.line-break() {
+	-ms-line-break: @arguments;
+	-webkit-line-break: @arguments;
+	line-break: @arguments;
+}
+
+.mask() {
+	-webkit-mask: @arguments;
+	mask: @arguments;
+}
+
+.object-fit() {
+	-o-object-fit: @arguments;
+	object-fit: @arguments;
+}
+
+.perspective-origin() {
+	-moz-perspective-origin: @arguments;
+	-ms-perspective-origin: @arguments;
+	-webkit-perspective-origin: @arguments;
+	perspective-origin: @arguments;
+}
+
+.region-fragment() {
+	-webkit-region-fragment: @arguments;
+	region-fragment: @arguments;
+}
+
+.scrollbar-track-color() {
+	-ms-scrollbar-track-color: @arguments;
+	scrollbar-track-color: @arguments;
+}
+
+.tab-size() {
+	-o-tab-size: @arguments;
+	tab-size: @arguments;
+}
+
+.text-align-last() {
+	-moz-text-align-last: @arguments;
+	-ms-text-align-last: @arguments;
+	text-align-last: @arguments;
+}
+
+.text-decoration-line() {
+	-moz-text-decoration-line: @arguments;
+	text-decoration-line: @arguments;
+}
+
+.text-decoration-style() {
+	-moz-text-decoration-style: @arguments;
+	text-decoration-style: @arguments;
+}
+
+.text-justify() {
+	-ms-text-justify: @arguments;
+	text-justify: @arguments;
+}
+
+.text-size-adjust() {
+	-moz-text-size-adjust: @arguments;
+	-ms-text-size-adjust: @arguments;
+	-webkit-text-size-adjust: @arguments;
+	text-size-adjust: @arguments;
+}
+
+.transform() {
+	-moz-transform: @arguments;
+	-ms-transform: @arguments;
+	-o-transform: @arguments;
+	-webkit-transform: @arguments;
+	transform: @arguments;
+}
+
+.touch-action() {
+	-ms-touch-action: @arguments;
+	touch-action: @arguments;
+}
+
+.transform-origin() {
+	-moz-transform-origin: @arguments;
+	-ms-transform-origin: @arguments;
+	-o-transform-origin: @arguments;
+	-webkit-transform-origin: @arguments;
+	transform-origin: @arguments;
+}
+
+.transform-style() {
+	-webkit-transform-style: @arguments;
+	transform-style: @arguments;
+}
+
+.transition() {
+	-moz-transition: @arguments;
+	-o-transition: @arguments;
+	-webkit-transition: @arguments;
+	transition: @arguments;
+}
+
+.transition-delay() {
+	-moz-transition-delay: @arguments;
+	-o-transition-delay: @arguments;
+	-webkit-transition-delay: @arguments;
+	transition-delay: @arguments;
+}
+
+.transition-duration() {
+	-moz-transition-duration: @arguments;
+	-o-transition-duration: @arguments;
+	-webkit-transition-duration: @arguments;
+	transition-duration: @arguments;
+}
+
+.transition-property() {
+	-moz-transition-property: @arguments;
+	-o-transition-property: @arguments;
+	-webkit-transition-property: @arguments;
+	transition-property: @arguments;
+}
+
+.transition-timing-function() {
+	-moz-transition-timing-function: @arguments;
+	-o-transition-timing-function: @arguments;
+	-webkit-transition-timing-function: @arguments;
+	transition-timing-function: @arguments;
+}
+
+.user-select() {
+	-moz-user-select: @arguments;
+	-ms-user-select: @arguments;
+	-webkit-user-select: @arguments;
+	user-select: @arguments;
+}
+
+.word-break() {
+	-ms-word-break: @arguments;
+	word-break: @arguments;
+}
+
+.zoom() {
+	-ms-zoom: @arguments;
+	zoom: @arguments;
+}
+
+.writing-mode() {
+	-ms-writing-mode: @arguments;
+	writing-mode: @arguments;
+}
+
+.word-wrap() {
+	-ms-word-wrap: @arguments;
+	word-wrap: @arguments;
+}
+
+.text-underline-position() {
+	-ms-text-underline-position: @arguments;
+	text-underline-position: @arguments;
+}
+
+.text-decoration-color() {
+	-moz-text-decoration-color: @arguments;
+	text-decoration-color: @arguments;
+}
+
+.scrollbar-shadow-color() {
+	-ms-scrollbar-shadow-color: @arguments;
+	scrollbar-shadow-color: @arguments;
+}
+
+.scrollbar-3dlight-color() {
+	-ms-scrollbar-3dlight-color: @arguments;
+	scrollbar-3dlight-color: @arguments;
+}
+
+.scrollbar-arrow-color() {
+	-ms-scrollbar-arrow-color: @arguments;
+	scrollbar-arrow-color: @arguments;
+}
+
+.scrollbar-base-color() {
+	-ms-scrollbar-base-color: @arguments;
+	scrollbar-base-color: @arguments;
+}
+
+.scrollbar-darkshadow-color() {
+	-ms-scrollbar-darkshadow-color: @arguments;
+	scrollbar-darkshadow-color: @arguments;
+}
+
+.scrollbar-face-color() {
+	-ms-scrollbar-face-color: @arguments;
+	scrollbar-face-color: @arguments;
+}
+
+.scrollbar-highlight-color() {
+	-ms-scrollbar-highlight-color: @arguments;
+	scrollbar-highlight-color: @arguments;
+}
+
+div {
+	caption-side: block-end;
+	clear: left;
+	clip: auto;
+	clip-path: polygon();
+	clip-rule: evenodd;
+	color-interpolation: linearRGB;
+	color-interpolation-filters: sRGB;
+	color-rendering: optimizeQuality;
+	.column-count();
+	column-fill: balance;
+	.column-gap();
+	.column-rule();
+	.column-rule-color();
+	.column-rule-style();
+	.column-rule-width();
+	.column-span();
+	.column-width();
+	.columns();
+	content: counters(name, string);
+	counter-increment: none;
+	counter-reset: none;
+	crop: insert-rect(1px,4px,3px,44px);
+	cue: soft;
+	cue-after: silent;
+	cue-before: x-loud;
+	cursor: zoom-in;
+	cursor: zoom-out;
+	cursor: alias;
+	cursor: cell;
+	direction: ltr;
+	display: flexbox;
+	elevation: higher;
+	empty-cells: hide;
+	enable-background: accumulate;
+	fill: AppWorkspace;
+	fill-opacity: 0;
+	fill-rule: nonzero;
+	filter: 4;
+	fit: hidden;
+	fit-position: meet;
+	.flex();
+	flex-basis: auto;
+	.flex-direction();
+	.flex-flow();
+	flex-grow: 3;
+	flex-shrink: 3;
+	.flex-wrap();
+	float: none;
+	flood-color: aquamarine;
+	flood-opacity: 0;
+	.flow-from();
+	.flow-into();
+	font: medium;
+	font-family: 'Agency FB';
+	.font-feature-settings();
+	font-kerning: normal;
+	font-language-override: normal;
+	font-size: x-small;
+	font-size-adjust: none;
+	font-stretch: extra-condensed;
+	font-style: normal;
+	font-synthesis: style;
+	font-variant: small-caps;
+	font-variant-alternates: ornaments();
+	font-variant-caps: petite-caps;
+	font-variant-east-asian: jis90;
+	font-variant-ligatures: historical-ligatures;
+	font-variant-numeric: slashed-zero;
+	font-variant-position: ordinal;
+	font-weight: 700;
+	glyph-orientation-horizontal: auto;
+	glyph-orientation-vertical: auto;
+	grid-cell: none;
+	.grid-column();
+	.grid-column-align();
+	grid-column-sizing: minmax();
+	.grid-column-span();
+	.grid-columns();
+	grid-flow: none;
+	.grid-row();
+	.grid-row-align();
+	.grid-rows();
+	grid-template: none;
+	hanging-punctuation: force-end;
+	.hyphens();
+	icon: auto;
+	image-orientation: from-image;
+	image-rendering: optimizeQuality;
+	image-resolution: from-image;
+	.ime-mode();
+	justify-content: flex-start;
+	kerning: auto;
+	letter-spacing: normal;
+	lighting-color: AppWorkspace;
+	.line-break();
+	list-style: decimal;
+	list-style-image: none;
+	list-style-position: inside;
+	list-style-type: lower-alpha;
+	marker: none;
+	marker-end: none;
+	marker-mid: none;
+	marker-start: none;
+	.mask();
+	move-to: here;
+	nav-down: current;
+	nav-index: auto;
+	nav-left: current;
+	nav-right: current;
+	nav-up: current;
+	.object-fit();
+	.object-position();
+	opacity: 0;
+	order: 0;
+	orphans: 3;
+	outline: inset;
+	outline-color: aqua;
+	outline-offset: 5px;
+	outline-style: groove;
+	outline-width: thick;
+	overflow-wrap: break-word;
+	page: auto;
+	page-break-after: avoid;
+	page-break-before: avoid;
+	page-break-inside: avoid;
+	page-policy: last;
+	paint-order: markers;
+	pause: weak;
+	pause-after: weak;
+	pause-before: weak;
+	.perspective();
+	.perspective-origin();
+	pitch: medium;
+	pitch-range: 33;
+	pointer-events: visible;
+	quotes: none;
+	.region-fragment();
+	resize: horizontal;
+	rest: strong;
+	rest-after: x-strong;
+	rest-before: x-strong;
+	richness: 4;
+	rotation: 90deg;
+	rotation-point: center;
+	ruby-align: end;
+	ruby-overhang: end;
+	ruby-position: inline;
+	ruby-span: none;
+	.scrollbar-track-color();
+	.scrollbar-3dlight-color();
+	.scrollbar-arrow-color();
+	.scrollbar-base-color();
+	.scrollbar-darkshadow-color();
+	.scrollbar-face-color();
+	.scrollbar-highlight-color();
+	.scrollbar-shadow-color();
+	shape-image-threshold: 0.4;
+	shape-margin: 4px;
+	shape-outside: inset();
+	shape-rendering: geometricPrecision;
+	speak: no-punctuation;
+	speak-as: no-punctuation;
+	speech-rate: slow;
+	stop-color: AppWorkspace;
+	stop-opacity: 0.2;
+	stress: 4;
+	stroke: aqua;
+	stroke-dasharray: none;
+	stroke-dashoffset: 0;
+	stroke-linecap: round;
+	stroke-linejoin: miter;
+	stroke-miterlimit: 3;
+	stroke-opacity: 0;
+	stroke-width: 4px;
+	.tab-size();
+	table-layout: fixed;
+	text-align: match-parent;
+	.text-align-last();
+	text-anchor: middle;
+	text-combine-upright: digits;
+	text-decoration: none;
+	.text-decoration-color();
+	.text-decoration-line();
+	text-decoration-skip: objects;
+	.text-decoration-style();
+	text-emphasis: open;
+	text-emphasis-color: aqua;
+	text-emphasis-position: left;
+	text-emphasis-style: open;
+	text-indent: each-line;
+	.text-justify();
+	text-orientation: sideways-right;
+	text-rendering: optimizeLegibility;
+	text-shadow: none;
+	.text-size-adjust();
+	text-space-collapse: preserve;
+	text-transform: lowercase;
+	.text-underline-position();
+	text-wrap: none;
+	.touch-action();
+	.transform();
+	.transform-origin();
+	.transform-style();
+	.transition();
+	.transition-delay();
+	.transition-duration();
+	.transition-property();
+	.transition-timing-function();
+	.user-select();
+	voice-balance: leftwards;
+	voice-duration: 4s;
+	voice-family: neutral;
+	voice-pitch: medium;
+	voice-range: medium;
+	voice-rate: x-fast;
+	voice-stress: none;
+	voice-volume: soft;
+	volume: soft;
+	white-space: pre;
+	.word-break();
+	word-spacing: normal;
+	.word-wrap();
+	.writing-mode();
+	.zoom();
+	unicode-bidi: isolate;
+}
+
+.user-select (@type) when (@type = none) {
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 .selection(@args) {
-  ::-moz-selection: @arguments;
-  ::selection: @arguments;
+	//::-moz-selection: @arguments;
+	//::selection: @arguments;
 }
 
 .appearance(@args) {
-  -moz-appearance: @arguments;
-  -webkit-appearance: @arguments;
-  appearance: @arguments;
+	-moz-appearance: @arguments;
+	-webkit-appearance: @arguments;
+	appearance: @arguments;
 }
 
 .placeholder-shown(@args) {
-  &:-ms-input-placeholder: @arguments;
-  &:-moz-placeholder: @arguments;
-  &:-webkit-input-placeholder: @arguments;
-  &:placeholder-shown: @arguments;
+	/*&:-ms-input-placeholder: @arguments;
+	&:-moz-placeholder: @arguments;
+	&:-webkit-input-placeholder: @arguments;
+	&:placeholder-shown: @arguments;
+	*/
 }
 
 .read-only(@args) {
-  &:-moz-read-only,
-  &:read-only {
-    @arguments
-  }
-}
-.read-write(@args) {
-  &:-moz-read-write,
-  &:read-write {
-    @arguments
-  }
+	&:-moz-read-only,
+	&:read-only {
+		@args
+		();
+	}
 }
 
-.dir(@ltr, @args) {
-  &:-moz-dir(@ltr),
-  &:dir(@ltr) {
-    @args;
-  }
+.read-write(@args) {
+	&:-moz-read-write,
+	&:read-write {
+		@args
+		();
+	}
+}
+
+.dir(@ltr; @args) {
+	&:-moz-dir(ltr),
+	&:dir(ltr) {
+		@args
+		();
+	}
 }
 
 .any-link(@args) {
-  &:-moz-any-link,
-  &:any-link {
-    @arguments
-  }
+	&:-moz-any-link,
+	&:any-link {
+		@args
+		();
+	}
 }
+
 .scope(@args) {
-  &:-moz-scope,
-  &:scope {
-    @arguments
-  }
+	&:-moz-scope,
+	&:scope {
+		@args
+		();
+	}
 }
 
 .text-overflow(@args) {
-  -o-text-overflow: @arguments;
-  text-overflow: @arguments;
+	-o-text-overflow: @arguments;
+	-ms-text-overflow: @arguments;
+	text-overflow: @arguments;
 }
+
 .background-clip(@args) {
-  -moz-background-clip: @arguments;
-  -o-background-clip: @arguments;
-  -webkit-background-clip: @arguments;
-  background-clip: @arguments;
+	-moz-background-clip: @arguments;
+	-webkit-background-clip: @arguments;
+	background-clip: @arguments;
 }
+
 .background-origin(@args) {
-  -moz-background-origin: @arguments;
-  -o-background-origin: @arguments;
-  -webkit-background-origin: @arguments;
-  background-origin: @arguments;
+	-moz-background-origin: @arguments;
+	-webkit-background-origin: @arguments;
+	background-origin: @arguments;
 }
+
 .background-size(@args) {
-  -moz-background-size: @arguments;
-  -o-background-size: @arguments;
-  -webkit-background-size: @arguments;
-  background-size: @arguments;
+	background-size: @arguments;
 }
+
 .box-sizing(@args) {
-  -webkit-box-sizing: @arguments;
-  box-sizing: @arguments;
+	-webkit-box-sizing: @arguments;
+	-moz-box-sizing: @arguments;
+	box-sizing: @arguments;
 }
 
 .box-shadow(@args) {
-  -webkit-box-shadow: @arguments;
-  box-shadow: @arguments;
+	-webkit-box-shadow: @arguments;
+	box-shadow: @arguments;
 }
 
 .box-decoration(@args) {
-  -webkit-box-decoration: @arguments;
-  box-decoration: @arguments;
+	-webkit-box-decoration: @arguments;
+	box-decoration: @arguments;
 }
 
 .box-decoration-break(@args) {
-  -webkit-box-decoration-break: @arguments;
-  box-decoration-break: @arguments;
+	box-decoration-break: @arguments;
 }
 
 .clip-path(@args) {
-  -webkit-clip-path: @arguments;
-  clip-path: @arguments;
+	clip-path: @arguments;
 }
 
 .filter(@args) {
-  -webkit-filter: @arguments;
-  filter: @arguments;
+	-webkit-filter: @arguments;
+	filter: @arguments;
 }
 
 .hyphens(@args) {
-  -ms-hyphens: @arguments;
-  -moz-hyphens: @arguments;
-  -webkit-hyphens: @arguments;
-  hyphens: @arguments;
+	-ms-hyphens: @arguments;
+	-moz-hyphens: @arguments;
+	-webkit-hyphens: @arguments;
+	hyphens: @arguments;
 }
 
 .min-device-pixel-ratio(@args) {
-  -webkit-min-device-pixel-ratio: @arguments;
-  min-device-pixel-ratio: @arguments;
+	-webkit-min-device-pixel-ratio: @arguments;
+	min-device-pixel-ratio: @arguments;
 }
 
 .max-device-pixel-ratio(@args) {
-  -webkit-max-device-pixel-ratio: @arguments;
-  max-device-pixel-ratio: @arguments;
+	-webkit-max-device-pixel-ratio: @arguments;
+	max-device-pixel-ratio: @arguments;
 }
 
 .mask(@args) {
-  -webkit-mask: @arguments;
-  mask: @arguments;
+	-webkit-mask: @arguments;
+	mask: @arguments;
 }
 
 .mask-box-image(@args) {
-  -webkit-mask-box-image: @arguments;
-  mask-box-image: @arguments;
+	-webkit-mask-box-image: @arguments;
+	mask-box-image: @arguments;
 }
 
 .mask-clip(@args) {
-  -webkit-mask-clip: @arguments;
-  mask-clip: @arguments;
+	-webkit-mask-clip: @arguments;
+	mask-clip: @arguments;
 }
 
 .mask-image(@args) {
-  -webkit-mask-image: @arguments;
-  mask-image: @arguments;
+	-webkit-mask-image: @arguments;
+	mask-image: @arguments;
 }
 
 .mask-origin(@args) {
-  -webkit-mask-origin: @arguments;
-  mask-origin: @arguments;
+	-webkit-mask-origin: @arguments;
+	mask-origin: @arguments;
 }
 
 .mask-position(@args) {
-  -webkit-mask-position: @arguments;
-  mask-position: @arguments;
+	-webkit-mask-position: @arguments;
+	mask-position: @arguments;
 }
 
 .mask-repeat(@args) {
-  -webkit-mask-repeat: @arguments;
-  mask-repeat: @arguments;
+	-webkit-mask-repeat: @arguments;
+	mask-repeat: @arguments;
 }
 
 .mask-size(@args) {
-  -webkit-mask-size: @arguments;
-  mask-size: @arguments;
+	-webkit-mask-size: @arguments;
+	mask-size: @arguments;
 }
 
 .mask-type(@args) {
-  mask-type: @arguments;
+	mask-type: @arguments;
 }
 
 .cursor(@type) when (@type = zoom-in) {
-  cursor: -moz-zoom-in;
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
+	cursor: -moz-zoom-in;
+	cursor: -webkit-zoom-in;
+	cursor: zoom-in;
 }
+
 .cursor(@type) when (@type = zoom-out) {
-  cursor: -moz-zoom-out;
-  cursor: -webkit-zoom-out;
-  cursor: zoom-out;
+	cursor: -moz-zoom-out;
+	cursor: -webkit-zoom-out;
+	cursor: zoom-out;
 }
+
 .cursor(@type) when (@type = grab) {
-  cursor: -moz-grab;
-  cursor: -webkit-grab;
-  cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+	cursor: grab;
 }
+
 .cursor(@type) when (@type = grabbing) {
-  cursor: -moz-grabbing;
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
 }
 
 .cursor(@type) {
-
 }
 
 .touch-action(@args) {
-  -ms-touch-action: @arguments;
-  touch-action: @arguments;
+	-ms-touch-action: @arguments;
+	touch-action: @arguments;
 }
 
 .text-size-adjust(@args) {
-  -webkit-text-size-adjust: @arguments;
-  text-size-adjust: @arguments;
+	-webkit-text-size-adjust: @arguments;
+	-moz-text-size-adjust: @arguments;
+	-ms-text-size-adjust: @arguments;
+	text-size-adjust: @arguments;
 }
 
 .shape-margin(@args) {
-  -webkit-shape-margin: @arguments;
-  shape-margin: @arguments;
+	-webkit-shape-margin: @arguments;
+	shape-margin: @arguments;
 }
 
 .shape-outside(@args) {
-  -webkit-shape-outside: @arguments;
-  shape-outside: @arguments;
+	-webkit-shape-outside: @arguments;
+	shape-outside: @arguments;
 }
 
 .shape-image-threshold(@args) {
-  -webkit-shape-image-threshold: @arguments;
-  shape-image-threshold: @arguments;
+	-webkit-shape-image-threshold: @arguments;
+	shape-image-threshold: @arguments;
 }
 
 .text-decoration-color(@args) {
-  -moz-text-decoration-color: @arguments;
-  -webkit-text-decoration-color: @arguments;
-  text-decoration-color: @arguments;
+	-moz-text-decoration-color: @arguments;
+	text-decoration-color: @arguments;
 }
 
 .text-decoration-line(@args) {
-  -moz-text-decoration-line: @arguments;
-  -webkit-text-decoration-line: @arguments;
-  text-decoration-line: @arguments;
+	-moz-text-decoration-line: @arguments;
+	text-decoration-line: @arguments;
 }
 
 .text-decoration-style(@args) {
-  -moz-text-decoration-style: @arguments;
-  -webkit-text-decoration-style: @arguments;
-  text-decoration-style: @arguments;
+	-moz-text-decoration-style: @arguments;
+	text-decoration-style: @arguments;
 }
 
 .border-image(@args) {
-  -moz-border-image: @arguments;
-  -webkit-border-image: @arguments;
-  -o-border-image: @arguments;
-  border-image: @arguments;
+	-moz-border-image: @arguments;
+	-webkit-border-image: @arguments;
+	-o-border-image: @arguments;
+	border-image: @arguments;
 }
 
 .tab-size(@args) {
-  -moz-tab-size: @arguments;
-  -o-tab-size: @arguments;
-  tab-size: @arguments;
+	-o-tab-size: @arguments;
+	tab-size: @arguments;
 }
 
 .fill-available(@args) {
-  -moz-available: @arguments;
-  -webkit-fill-available: @arguments;
-  fill-available: @arguments;
+	-moz-available: @arguments;
+	-webkit-fill-available: @arguments;
+	fill-available: @arguments;
 }
 
 .max-content(@args) {
-  -moz-max-content: @arguments;
-  -webkit-max-content: @arguments;
-  max-content: @arguments;
+	-moz-max-content: @arguments;
+	-webkit-max-content: @arguments;
+	max-content: @arguments;
 }
 
 .min-content(@args) {
-  -moz-min-content: @arguments;
-  -webkit-min-content: @arguments;
-  min-content: @arguments;
+	-moz-min-content: @arguments;
+	-webkit-min-content: @arguments;
+	min-content: @arguments;
 }
 
 .fit-content(@args) {
-  -moz-fit-content: @arguments;
-  -webkit-fit-content: @arguments;
-  fit-content: @arguments;
+	-moz-fit-content: @arguments;
+	-webkit-fit-content: @arguments;
+	fit-content: @arguments;
 }
 
 .flow-into(@args) {
-  -ms-flow-into: @arguments;
-  -webkit-flow-into: @arguments;
-  flow-into: @arguments;
+	-ms-flow-into: @arguments;
+	-webkit-flow-into: @arguments;
+	flow-into: @arguments;
 }
 
 .flow-from(@args) {
-  -ms-flow-from: @arguments;
-  -webkit-flow-from: @arguments;
-  flow-from: @arguments;
+	-ms-flow-from: @arguments;
+	-webkit-flow-from: @arguments;
+	flow-from: @arguments;
 }
 
 .region-fragment(@args) {
-  -webkit-region-fragment: @arguments;
-  region-fragment: @arguments;
-}
-
-.break-before(@args) {
-  -webkit-break-before: @arguments;
-  break-before: @arguments;
-}
-
-.break-after(@args) {
-  -webkit-break-after: @arguments;
-  break-after: @arguments;
-}
-
-.break-inside(@args) {
-  -webkit-break-inside: @arguments;
-  break-inside: @arguments;
+	-webkit-region-fragment: @arguments;
+	region-fragment: @arguments;
 }
 
 .grid-columns(@args) {
-  -ms-grid-columns: @arguments;
-  grid-columns: @arguments;
+	-ms-grid-columns: @arguments;
+	grid-columns: @arguments;
 }
+
 .grid-row(@args) {
-  -ms-grid-row: @arguments;
-  grid-row: @arguments;
+	-ms-grid-row: @arguments;
+	grid-row: @arguments;
 }
 
 .object-fit(@args) {
-  -o-object-fit: @arguments;
-  object-fit: @arguments;
+	-o-object-fit: @arguments;
+	object-fit: @arguments;
 }
 
 .object-position(@args) {
-  -o-object-position: @arguments;
-  object-position: @arguments;
+	-o-object-position: @arguments;
+	object-position: @arguments;
 }
 
 .font-kerning(@args) {
-//// Font-variants
+	//// Font-variants
 }
 
 .column-count(@args) {
-  -moz-column-count: @arguments;
-  -webkit-column-count: @arguments;
-  column-count: @arguments;
+	-moz-column-count: @arguments;
+	-webkit-column-count: @arguments;
+	column-count: @arguments;
 }
+
 .column-width(@args) {
-  -moz-column-width: @arguments;
-  -webkit-column-width: @arguments;
-  column-width: @arguments;
+	-moz-column-width: @arguments;
+	-webkit-column-width: @arguments;
+	column-width: @arguments;
 }
+
 .column-gap(@args) {
-  -moz-column-gap: @arguments;
-  -webkit-column-gap: @arguments;
-  column-gap: @arguments;
+	-moz-column-gap: @arguments;
+	-webkit-column-gap: @arguments;
+	column-gap: @arguments;
 }
+
 .column-rule(@args) {
-  -moz-column-rule: @arguments;
-  -webkit-column-rule: @arguments;
-  column-rule: @arguments;
+	-moz-column-rule: @arguments;
+	-webkit-column-rule: @arguments;
+	column-rule: @arguments;
 }
+
 .columns(@args) {
-  -moz-columns: @arguments;
-  -webkit-columns: @arguments;
-  columns: @arguments;
+	-moz-columns: @arguments;
+	-webkit-columns: @arguments;
+	columns: @arguments;
 }
+
 .break-before(@args) {
-  -moz-break-before: @arguments;
-  -webkit-break-before: @arguments;
-  break-before: @arguments;
+	-webkit-break-before: @arguments;
+	break-before: @arguments;
 }
 
 .break-after(@args) {
-  -moz-break-after: @arguments;
-  -webkit-break-after: @arguments;
-  break-after: @arguments;
+	-webkit-break-after: @arguments;
+	break-after: @arguments;
 }
 
 .break-inside(@args) {
-  -moz-break-inside: @arguments;
-  -webkit-break-inside: @arguments;
-  break-inside: @arguments;
+	-webkit-break-inside: @arguments;
+	break-inside: @arguments;
 }
+
 .column-fill(@args) {
-  -moz-column-fill: @arguments;
-  -webkit-column-fill: @arguments;
-  column-fill: @arguments;
+	column-fill: @arguments;
 }
+
 .column-span(@args) {
-  -moz-column-span: @arguments;
-  -webkit-column-span: @arguments;
-  column-span: @arguments;
+	-webkit-column-span: @arguments;
+	column-span: @arguments;
 }
 
 .transform(@args) {
-  -ms-transform: @arguments;
-  -moz-transform: @arguments;
-  -webkit-transform: @arguments;
-  -o-transform: @arguments;
-  transform: @arguments;
+	-ms-transform: @arguments;
+	-moz-transform: @arguments;
+	-webkit-transform: @arguments;
+	-o-transform: @arguments;
+	transform: @arguments;
 }
+
 .transform-origin(@args) {
-  -ms-transform-origin: @arguments;
-  -moz-transform-origin: @arguments;
-  -webkit-transform-origin: @arguments;
-  -o-transform-origin: @arguments;
-  transform-origin: @arguments;
+	-ms-transform-origin: @arguments;
+	-moz-transform-origin: @arguments;
+	-webkit-transform-origin: @arguments;
+	-o-transform-origin: @arguments;
+	transform-origin: @arguments;
 }
+
 .transform-style(@args) {
-  -ms-transform-style: @arguments;
-  -moz-transform-style: @arguments;
-  -webkit-transform-style: @arguments;
-  -o-transform-style: @arguments;
-  transform-style: @arguments;
+	-webkit-transform-style: @arguments;
+	transform-style: @arguments;
 }
+
 .perspective(@args) {
-  -ms-perspective: @arguments;
-  -moz-perspective: @arguments;
-  -webkit-perspective: @arguments;
-  -o-perspective: @arguments;
-  perspective: @arguments;
+	-ms-perspective: @arguments;
+	-moz-perspective: @arguments;
+	-webkit-perspective: @arguments;
+	perspective: @arguments;
 }
+
 .perspective-origin(@args) {
-  -ms-perspective-origin: @arguments;
-  -moz-perspective-origin: @arguments;
-  -webkit-perspective-origin: @arguments;
-  -o-perspective-origin: @arguments;
-  perspective-origin: @arguments;
+	-ms-perspective-origin: @arguments;
+	-moz-perspective-origin: @arguments;
+	-webkit-perspective-origin: @arguments;
+	perspective-origin: @arguments;
 }
+
 .backface-visibility(@args) {
-  -ms-backface-visibility: @arguments;
-  -moz-backface-visibility: @arguments;
-  -webkit-backface-visibility: @arguments;
-  -o-backface-visibility: @arguments;
-  backface-visibility: @arguments;
+	-moz-backface-visibility: @arguments;
+	-webkit-backface-visibility: @arguments;
+	backface-visibility: @arguments;
+}
+
+.align-content(@args) {
+	-ms-align-content: @arguments;
+	-webkit-align-content: @arguments;
+	align-content: @arguments;
+}
+
+.animation(@args) {
+	-moz-animation: @arguments;
+	-o-animation: @arguments;
+	-webkit-animation: @arguments;
+	animation: @arguments;
+}
+
+.animation-delay(@args) {
+	-moz-animation-delay: @arguments;
+	-o-animation-delay: @arguments;
+	-webkit-animation-delay: @arguments;
+	animation-delay: @arguments;
+}
+
+.animation-direction(@args) {
+	-moz-animation-direction: @arguments;
+	-o-animation-direction: @arguments;
+	-webkit-animation-direction: @arguments;
+	animation-direction: @arguments;
+}
+
+.animation-duration(@args) {
+	-moz-animation-duration: @arguments;
+	-o-animation-duration: @arguments;
+	-webkit-animation-duration: @arguments;
+	animation-duration: @arguments;
+}
+
+.animation-fill-mode(@args) {
+	-moz-animation-fill-mode: @arguments;
+	-o-animation-fill-mode: @arguments;
+	-webkit-animation-fill-mode: @arguments;
+	animation-fill-mode: @arguments;
+}
+
+.animation-iteration-count(@args) {
+	-moz-animation-iteration-count: @arguments;
+	-o-animation-iteration-count: @arguments;
+	-webkit-animation-iteration-count: @arguments;
+	animation-iteration-count: @arguments;
+}
+
+.animation-name(@args) {
+	-moz-animation-name: @arguments;
+	-o-animation-name: @arguments;
+	-webkit-animation-name: @arguments;
+	animation-name: @arguments;
+}
+
+.animation-play-state(@args) {
+	-moz-animation-play-state: @arguments;
+	-o-animation-play-state: @arguments;
+	-webkit-animation-play-state: @arguments;
+	animation-play-state: @arguments;
+}
+
+.animation-timing-function(@args) {
+	-moz-animation-timing-function: @arguments;
+	-o-animation-timing-function: @arguments;
+	-webkit-animation-timing-function: @arguments;
+	animation-timing-function: @arguments;
+}
+
+.behavior(@args) {
+	-ms-behavior: @arguments;
+	behavior: @arguments;
 }
