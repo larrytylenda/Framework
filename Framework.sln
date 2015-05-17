@@ -3,33 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40418.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "less", "less", "{805AAF61-C523-4E15-953A-D44B3A5A8256}"
-	ProjectSection(SolutionItems) = preProject
-		less\mixins.less = less\mixins.less
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{2EA29EA3-C6C3-4110-A0A3-7D3C082E92BD}"
-	ProjectSection(SolutionItems) = preProject
-		js\inputs.js = js\inputs.js
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FC9A6454-FCB7-4A28-A07D-56EDA49C5D5C}"
-	ProjectSection(SolutionItems) = preProject
-		.gitattributes = .gitattributes
-		.gitignore = .gitignore
-		README.md = README.md
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CB6B9797-52DF-4EBF-BB7B-08E6781138D6}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", "{1631DEBD-675C-4673-B492-5C3F94DEEF2D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main.Tests", "Main.Tests\Main.Tests.csproj", "{79DABD9D-681A-4B1C-8CEB-62EE316FA0C8}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsWebApp", "NodejsWebApp\NodejsWebApp.njsproj", "{5C9511CA-8A09-4387-9974-66445E5CD5CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,20 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1631DEBD-675C-4673-B492-5C3F94DEEF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1631DEBD-675C-4673-B492-5C3F94DEEF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1631DEBD-675C-4673-B492-5C3F94DEEF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1631DEBD-675C-4673-B492-5C3F94DEEF2D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{79DABD9D-681A-4B1C-8CEB-62EE316FA0C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79DABD9D-681A-4B1C-8CEB-62EE316FA0C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79DABD9D-681A-4B1C-8CEB-62EE316FA0C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79DABD9D-681A-4B1C-8CEB-62EE316FA0C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C9511CA-8A09-4387-9974-66445E5CD5CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C9511CA-8A09-4387-9974-66445E5CD5CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C9511CA-8A09-4387-9974-66445E5CD5CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C9511CA-8A09-4387-9974-66445E5CD5CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{805AAF61-C523-4E15-953A-D44B3A5A8256} = {FC9A6454-FCB7-4A28-A07D-56EDA49C5D5C}
-		{2EA29EA3-C6C3-4110-A0A3-7D3C082E92BD} = {FC9A6454-FCB7-4A28-A07D-56EDA49C5D5C}
 	EndGlobalSection
 EndGlobal
